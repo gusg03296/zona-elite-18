@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zona Privada Elite 🔥 | Contenido Exclusivo +18</title>
+
+<meta name="description" content="Zona privada exclusiva para mayores de 18 años. Relatos premium, galería privada y acceso VIP.">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- CONTENEDOR HEADER TEMPLATE -->
+<div id="header-container"></div>
+
+<!-- MODAL +18 -->
+<div id="ageModal" style="
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+z-index:9999;
+text-align:center;
+padding:20px;
+">
+<h2 style="color:#ff004c;">🔞 Acceso exclusivo +18</h2>
+<p>Este sitio contiene contenido solo para adultos.</p>
+<button onclick="enterSite()">Tengo +18</button>
+</div>
+
+<!-- CONTENIDO PRINCIPAL -->
+<div class="container" id="mainContent" style="display:none;">
+
+<div class="card">
+<h2>Bienvenido a Zona Privada Elite 🔥</h2>
+<p>Explora relatos exclusivos, galería privada y contenido premium reservado para miembros VIP.</p>
+<button onclick="location.href='relatos.html'">Explorar Relatos</button>
+</div>
+
+<div class="card">
+<h3>Galería Privada 🔒</h3>
+<p>Acceso restringido para suscriptores premium.</p>
+<button onclick="location.href='galeria.html'">Ir a Galería</button>
+</div>
+
+<div class="card">
+<h3>Área VIP 💎</h3>
+<p>Desbloquea todo el contenido exclusivo con membresía.</p>
+<button onclick="location.href='vip.html'">Acceso VIP</button>
+</div>
+
+</div>
+
+<!-- CONTENEDOR FOOTER TEMPLATE -->
+<div id="footer-container"></div>
+
+<script src="app.js"></script>
+
+<script>
+function enterSite(){
+document.getElementById("ageModal").style.display="none";
+document.getElementById("mainContent").style.display="block";
+}
+</script>
+
+</body>
+</html>
